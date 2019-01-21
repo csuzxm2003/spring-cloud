@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/ServletInitializer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/controller/MovieController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/entity/User.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client/src/main/java/com/cloud/client/user/feign/UserFeignClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery/src/main/java/com/cloud/discovery/ServletInitializer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-discovery/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/ServletInitializer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/controller/UserController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider/src/main/java/com/cloud/provider/entity/User.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
