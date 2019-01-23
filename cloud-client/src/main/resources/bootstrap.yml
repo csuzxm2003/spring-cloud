@@ -15,8 +15,3 @@ spring:
       discovery:
         enabled: true               #开启配置服务发现
         service-id: cloud-config    #配置服务实例名称
-  rabbitmq:
-    host: 134.175.134.80
-    port: 5672
-    username: root
-    password: dhcc2018

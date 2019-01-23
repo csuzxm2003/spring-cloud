@@ -7,4 +7,9 @@ management:
     web:
       exposure:
         include: '*'
-        
+spring:
+  rabbitmq:
+    host: 134.175.134.80
+    port: 5672
+    username: root
+    password: dhcc2018
