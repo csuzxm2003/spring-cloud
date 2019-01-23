@@ -1,6 +1,6 @@
 name: zhangsan
 age: 18
-sex: 男
+sex: 女
 #开放所有节点
 management:
   endpoints:
