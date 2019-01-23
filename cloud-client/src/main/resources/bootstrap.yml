@@ -1,0 +1,22 @@
+server:
+  port: 8090
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: false
+spring:
+  application:
+    name: cloud-client
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true               #开启配置服务发现
+        service-id: cloud-config    #配置服务实例名称
+  rabbitmq:
+    host: 134.175.134.80
+    port: 5672
+    username: root
+    password: dhcc2018

@@ -14,8 +14,9 @@ public class MovieController {
 
     @GetMapping("/user/{id}")
     public User findById(@PathVariable Long id) {
-
+        String json = "{\"name\":\"zhangsan\",\"age\":19}";
         User user = this.userFeignClient.findById(id);
         return user;
+
     }
 }

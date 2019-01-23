@@ -1,0 +1,9 @@
+name: zhangsan
+age: 18
+sex: 男
+#开放所有节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
