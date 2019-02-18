@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import feign.hystrix.FallbackFactory;
 
+@Component
 @FeignClient(name = "cloud-provider", fallbackFactory = FeignClientFallbackFactory.class)
 public interface UserFeignClient {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

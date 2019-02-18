@@ -13,3 +13,5 @@ spring:
     port: 5672
     username: root
     password: dhcc2018
+logging:
+  config: classpath:logback-spring.xml

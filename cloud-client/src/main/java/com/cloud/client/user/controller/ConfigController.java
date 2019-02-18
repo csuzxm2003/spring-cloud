@@ -1,6 +1,5 @@
 package com.cloud.client.user.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -20,7 +19,7 @@ public class ConfigController {
 
     @RequestMapping("/test")
     public String test(){
-        return "你好，我是"+name+",年龄："+age+"岁，我是个："+sex+"人。";
+        return "你好，我是"+name+",年龄："+age+"岁，我是个："+sex+"人。sdfs";
     }
 
     @RequestMapping("/jsontest")

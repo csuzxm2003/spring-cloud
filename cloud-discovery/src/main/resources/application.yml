@@ -1,6 +1,9 @@
 spring:
   application:
     name: eureka-server
+---
+spring:
+  profiles: peer1
   security:
     user:
       name: user
@@ -8,10 +11,31 @@ spring:
 server:
   port: 8080
 eureka:
+  instance:
+    hostname: peer1
   client:
-    registerWithEureka: false       #禁止注册自身
-    fetchRegistry: false
+    #registerWithEureka: false       #禁止注册自身
+    #fetchRegistry: false
     serviceUrl:
-      defaultZone: http://user:123456@localhost:8080/eureka/  #服务注册中心的地址
+      defaultZone: http://user:123456@peer2:8079/eureka/  #服务注册中心的地址
   server:
-    renewalPercentThreshold: 0.49
+    renewalPercentThreshold: 0.9
+---
+spring:
+  profiles: peer2
+  security:
+    user:
+      name: user
+      password: 123456
+server:
+  port: 8079
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    #registerWithEureka: false       #禁止注册自身
+    #fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://user:123456@peer1:8080/eureka/  #服务注册中心的地址
+  server:
+    renewalPercentThreshold: 0.9
