@@ -13,7 +13,7 @@ spring:
   datasource:
     username: root
     password: Zhao1982!(*@
-    url: jdbc:mysql://111.230.173.126:3306/microservice?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://111.230.173.126:3306/microservice?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:

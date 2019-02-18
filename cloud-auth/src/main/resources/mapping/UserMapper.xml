@@ -10,7 +10,7 @@
     </resultMap>
 
     <select id="getUserById" resultType="User">
-        select * from t_acc_user where id = #{id}
+        select * from t_app_user where id = #{id}
     </select>
 
 </mapper>
