@@ -20,6 +20,8 @@ eureka:
       defaultZone: http://user:123456@peer2:8079/eureka/  #服务注册中心的地址
   server:
     renewalPercentThreshold: 0.9
+  logging:
+    config: classpath:logback-spring.xml
 ---
 spring:
   profiles: peer2
@@ -39,3 +41,5 @@ eureka:
       defaultZone: http://user:123456@peer1:8080/eureka/  #服务注册中心的地址
   server:
     renewalPercentThreshold: 0.9
+  logging:
+    config: classpath:logback-spring.xml

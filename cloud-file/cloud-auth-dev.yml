@@ -1,0 +1,24 @@
+#开放所有节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  rabbitmq:
+    host: 134.175.134.80
+    port: 5672
+    username: root
+    password: dhcc2018
+  datasource:
+    username: root
+    password: Zhao1982!(*@
+    url: jdbc:mysql://111.230.173.126:3306/microservice?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml   #Mapper文件地址
+  type-aliases-package: com.cloud.auth              #包的别名
+
+logging:
+  config: classpath:logback-spring.xml                #日志配置文件地址
